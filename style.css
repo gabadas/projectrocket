@@ -4,13 +4,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: white;
+  --bg-url: url(https://github.com/gabadas/projectrocket/blob/main/assets/bg-mobile.jpg?raw=true);
+}
+
+.light{
+  --text-color: black;
+  --bg-url: url(https://github.com/gabadas/projectrocket/blob/main/assets/bg-mobile-light.jpg?raw=true);
+}
+
 body {
-  background: url(https://github.com/gabadas/projectrocket/blob/main/assets/bg-mobile.jpg?raw=true) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
   font-family: "Inter", sans-serif;
-  color: white;
+  color: var(--text-color);
 }
 
 #container {
@@ -66,7 +76,7 @@ ul li a {
 
 ul lia:hover {
   background: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid white;
+  border: 1.5px solid var(--text-color);
 }
 
 
