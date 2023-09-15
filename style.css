@@ -15,9 +15,8 @@ body * {
 
 #container {
   width: 360px;
-  height: 720px;
-  margin: auto;
-  padding-top: 56px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
 }
 
 #profile {
