@@ -6,16 +6,19 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(https://github.com/gabadas/projectrocket/blob/main/assets/bg-mobile.jpg?raw=true);
+  --bg-url: url(https://i.pinimg.com/originals/b5/c8/fd/b5c8fd45bfc9734c4e167ebb294abe38.jpg);
 }
 
 .light{
   --text-color: black;
-  --bg-url: url(https://github.com/gabadas/projectrocket/blob/main/assets/bg-mobile-light.jpg?raw=true);
+  --bg-url: url(https://github.com/gabadas/projectrocket/blob/main/assets/astethic.jpg?raw=true);
+  --stroke-color:     
 }
+
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  backdrop-filter: blur(8px);
 }
 
 body * {
@@ -28,6 +31,7 @@ body * {
   margin: 56px auto 0px;
   padding: 0 24px;
 }
+
 
 #profile {
   text-align: center;
@@ -74,7 +78,7 @@ ul li a {
   transition: background 0.2s;
 }
 
-ul lia:hover {
+ul li a:hover {
   background: rgba(255, 255, 255, 0.05);
   border: 1.5px solid var(--text-color);
 }
