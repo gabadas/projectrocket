@@ -48,6 +48,50 @@ body * {
   padding: 8px;
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 16px;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch label {
+  background-color: #ccc;
+  border-radius: 34px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.switch input:checked + label {
+  background-color: mediumvioletred; /* Cor quando o switch está ativado */
+}
+
+.switch label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 0px;
+  left: 0px;
+  transition: transform 0.2s ease;
+}
+
+.switch input:checked + label::before {
+  transform: translateX(26px);
+}
+
+
 ul{
   list-style: none;
 
