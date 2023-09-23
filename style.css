@@ -32,6 +32,49 @@ body * {
   padding: 0 24px;
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 16px;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch label {
+  background-color: #ccc;
+  border-radius: 34px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.switch input:checked + label {
+  background-color: mediumpurple; /* Cor quando o switch está ativado */
+}
+
+.switch label::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 2px;
+  left: 2.2px;
+  transition: transform 0.2s ease;
+}
+
+.switch input:checked + label::before {
+  transform: translateX(36px);
+}
+
 
 #profile {
   text-align: center;
@@ -93,6 +136,7 @@ ul li a:hover {
 
 
   font-size: 24px;
+  
 }
 
 #social-links a {
@@ -113,4 +157,9 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+  color: white;
+}
+
+footer a {
+  color: white;
 }
